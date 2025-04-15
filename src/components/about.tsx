@@ -34,7 +34,7 @@ export default function About() {
           <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-4">Our Story and Heritage</h2>
           <div className="w-24 h-1 bg-tea-gold mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-gray-600">
-            Founded in 1982, Mogotio Tea Factory has been producing the finest quality tea from the highlands of Kenya for over 40 years.
+            Founded in 2017, Motigo Tea Factory has been producing the finest quality tea from the highlands of Kenya for over 8 years.
           </p>
         </div>
 
@@ -44,7 +44,17 @@ export default function About() {
               From the Highlands of Kenya to Your Cup
             </h3>
             <p className="text-gray-600">
-              Nestled in the lush highlands of Kenya's Rift Valley, Mogotio Tea Factory has been cultivating and processing premium tea since 1982. Our factory combines traditional methods with modern technology to produce tea that's known for its exceptional quality, rich flavor, and distinctive aroma.
+              Motigo Tea Factory is a satellite of Kapkoros Tea Factory which falls in KTDA administrative zone 9 of region 5. The factory is situated 12 km from Bomet Town in MotigoSub-location, Silibwet location, Bomet Centralsub-county in Bomet County. Its construction was necessitated by congestion in the Mother factory – Kapkoros Tea Factory.
+
+              The factory serves Mugango, Kiromwok,Tegat and Chemaner electoral Zones of Kapkoros Tea Factory Company Limited.
+
+              The factory construction started in December 2015 and was completed in April 2017. Thereafter, commercial production commenced in August 2017 with a capacity to process 15million kg of green leaf.
+
+              The factory produces BP1, PF1, PD,D1, TMF, TM2, F1 and Dust tea grades with about 95% of it being for export.
+
+              Sitting on 6.3 Hectares of land at an altitude of 2332 MASL, the factory is serving a total of 10,408 growers spread in 29 coded centres and 70 un-coded collection centres with total acreage under tea of 1569.5 hectares. The total number of estimated tea bushes is 15,694,227.
+
+              The factory is served by the Kapkoros Group board of directors. The directors are responsible for governance and policy making while the day to day management of the factory operations and technical responsibilities are discharged by Kenya Tea Development Agency Ltd. through a management agreement with the Factory board..
             </p>
             <p className="text-gray-600">
               We take pride in our sustainable farming practices, working closely with local farmers to ensure both environmental stewardship and community development. Every leaf is carefully picked by skilled hands, ensuring only the finest tea reaches your cup.
@@ -52,24 +62,24 @@ export default function About() {
             <div className="pt-4">
               <div className="flex items-center gap-4">
                 <div className="h-14 w-14 rounded-full overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1921&q=80" 
-                    alt="CEO" 
+                  <img
+                    src="./DAVID-K.KORIR-CHARMAN-OLENGURUONE-ZONE1.webp"
+                    alt="CEO"
                     className="h-full w-full object-cover"
                   />
                 </div>
                 <div>
-                  <h4 className="font-medium">James Kimani</h4>
-                  <p className="text-gray-500 text-sm">Founder & CEO</p>
+                  <h4 className="font-medium">David Kiptonui Korir</h4>
+                  <p className="text-gray-500 text-sm">Chairman</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-            <img 
-              src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2121&q=80" 
-              alt="Tea plantation" 
+            <img
+              src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2121&q=80"
+              alt="Tea plantation"
               className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
