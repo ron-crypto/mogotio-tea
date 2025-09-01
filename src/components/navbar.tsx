@@ -1,12 +1,15 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X, Leaf, ShoppingCart } from "lucide-react";
 import { cn } from "../lib/utils";
+import { useCart } from "../context/CartContext";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { state } = useCart();
 
   // Handle scroll event to change navbar appearance
   useEffect(() => {
@@ -44,7 +47,7 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a 
+            <a
               key={link.name}
               href={link.href}
               className="text-tea-dark hover:text-tea-DEFAULT transition-colors font-medium"
@@ -55,6 +58,14 @@ export default function Navbar() {
           <Button className="bg-tea-DEFAULT hover:bg-tea-dark text-white">
             Shop Now
           </Button>
+          <Link to="/cart" className="relative text-tea-dark hover:text-tea-DEFAULT transition-colors">
+            <ShoppingCart className="h-6 w-6" />
+            {state.items.length > 0 && (
+              <span className="absolute -top-2 -right-2 bg-tea-gold text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                {state.items.length}
+              </span>
+            )}
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -75,7 +86,7 @@ export default function Navbar() {
         <div className="md:hidden bg-white shadow-lg py-4 px-4 absolute w-full">
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
-              <a 
+              <a
                 key={link.name}
                 href={link.href}
                 className="text-tea-dark hover:text-tea-DEFAULT transition-colors py-2 border-b border-gray-100"
@@ -87,6 +98,14 @@ export default function Navbar() {
             <Button className="bg-tea-DEFAULT hover:bg-tea-dark text-white mt-2">
               Shop Now
             </Button>
+            <Link
+              to="/cart"
+              className="text-tea-dark hover:text-tea-DEFAULT transition-colors py-2 border-b border-gray-100 flex items-center gap-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <ShoppingCart className="h-5 w-5" />
+              Cart {state.items.length > 0 && `(${state.items.length})`}
+            </Link>
           </div>
         </div>
       )}

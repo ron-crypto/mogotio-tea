@@ -2,8 +2,18 @@ import React from "react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Star } from "lucide-react";
+import { useCart } from "../context/CartContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Products() {
+  const { dispatch } = useCart();
+  const navigate = useNavigate();
+
+  const handleAddToCart = (product: any) => {
+    dispatch({ type: 'ADD_ITEM', payload: product });
+    navigate('/cart');
+  };
+
   const products = [
     {
       id: 1,
@@ -32,7 +42,7 @@ export default function Products() {
     {
       id: 4,
       name: "White Tea Collection",
-      image: "https://images.unsplash.com/photo-1556679343-c1917e0ccc2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80",
+      image: "https://media.istockphoto.com/id/547538594/photo/jasmine-tea-and-jasmine-flowers-on-wooden-background.jpg?s=612x612&w=0&k=20&c=90ilkIZwXnooljj00KaGut1umP1R7doSOnFfzIsZ3Ns=",
       description: "Delicately harvested white tea with a mild, sweet flavor.",
       price: "ksh 200",
       rating: 4
@@ -79,7 +89,7 @@ export default function Products() {
                   {renderRatingStars(product.rating)}
                 </div>
                 <p className="text-gray-600 mb-4">{product.description}</p>
-                <Button variant="outline" className="border-tea-DEFAULT text-tea-DEFAULT hover:bg-tea-DEFAULT hover:text-white w-full">
+                <Button className="bg-green-600 hover:bg-green-700 text-white w-full transition-all duration-300 hover:shadow-lg hover:scale-105" onClick={() => handleAddToCart(product)}>
                   Add to Cart
                 </Button>
               </div>

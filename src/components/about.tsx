@@ -93,6 +93,34 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
               <p className="text-gray-600">{feature.description}</p>
+              {feature.title === "Organic Farming" && (
+                <img
+                  src="https://7c63d2fa-09f1-4443-8711-57498d9b8ee9.sandbox.lovable.dev/src/assets/organic-farming.jpg"
+                  alt="Organic Farming"
+                  className="mt-4 rounded-lg w-full h-32 object-cover"
+                />
+              )}
+              {feature.title === "Premium Quality" && (
+                <img
+                  src="https://7c63d2fa-09f1-4443-8711-57498d9b8ee9.sandbox.lovable.dev/src/assets/premium-quality.jpg"
+                  alt="Premium Quality"
+                  className="mt-4 rounded-lg w-full h-32 object-cover"
+                />
+              )}
+              {feature.title === "Traditional Methods" && (
+                <img
+                  src="https://7c63d2fa-09f1-4443-8711-57498d9b8ee9.sandbox.lovable.dev/src/assets/traditional-methods.jpg"
+                  alt="Traditional Methods"
+                  className="mt-4 rounded-lg w-full h-32 object-cover"
+                />
+              )}
+              {feature.title === "Community Support" && (
+                <img
+                  src="https://7c63d2fa-09f1-4443-8711-57498d9b8ee9.sandbox.lovable.dev/src/assets/community-support.jpg"
+                  alt="Community Support"
+                  className="mt-4 rounded-lg w-full h-32 object-cover"
+                />
+              )}
             </div>
           ))}
         </div>

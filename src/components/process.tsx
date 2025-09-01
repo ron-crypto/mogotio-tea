@@ -7,25 +7,25 @@ export default function Process() {
       number: "01",
       title: "Tea Cultivation",
       description: "Our tea is grown in the highlands of Kenya at the perfect altitude and climate conditions. We use sustainable farming practices to ensure the health of both the plants and the environment.",
-      image: "https://images.unsplash.com/photo-1582126892906-5ba118ded0ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      image: "https://7c63d2fa-09f1-4443-8711-57498d9b8ee9.sandbox.lovable.dev/src/assets/tea-cultivation.jpg"
     },
     {
       number: "02",
       title: "Harvesting",
       description: "Our skilled tea pickers carefully select only the finest tea leaves, ensuring that each leaf is picked at its optimal time for maximum flavor and quality.",
-      image: "https://images.unsplash.com/photo-1550350872-8a3b7c6ea4b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      image: "https://7c63d2fa-09f1-4443-8711-57498d9b8ee9.sandbox.lovable.dev/src/assets/tea-harvesting.jpg"
     },
     {
       number: "03",
       title: "Processing",
       description: "Our leaves undergo a careful processing method that preserves their natural flavors and health benefits. This includes withering, rolling, oxidation, and drying.",
-      image: "https://images.unsplash.com/photo-1572085313473-22b8f8a8c08a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      image: "https://7c63d2fa-09f1-4443-8711-57498d9b8ee9.sandbox.lovable.dev/src/assets/tea-processing.jpg"
     },
     {
       number: "04",
       title: "Quality Control",
       description: "Each batch of tea undergoes rigorous quality control testing to ensure it meets our high standards for flavor, aroma, and appearance.",
-      image: "https://images.unsplash.com/photo-1546920591-dbc32e120bed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      image: "https://images.unsplash.com/photo-1727235314154-adced9445afc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHF1YWxpdHklMjBjb250cm9sJTIwb2YlMjB0ZWElMjBsZWF2ZXMlMjBieSUyMGFmcmljYW5zfGVufDB8fDB8fHww"
     }
   ];
 

@@ -1,22 +1,21 @@
 import React from 'react'
-import Navbar from './components/navbar'
-import Hero from './components/hero'
-import About from './components/about'
-import Process from './components/process'
-import Footer from './components/footer'
-import Products from './components/products'
-import Contact from './contact'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { CartProvider } from './context/CartContext'
+import Home from './pages/Home'
+import Cart from './pages/Cart'
+import Checkout from './pages/Checkout'
+
 function App() {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <Hero />
-      <About />
-      <Process />
-      <Products />
-      <Contact />
-      <Footer />
-    </div>
+    <CartProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+        </Routes>
+      </Router>
+    </CartProvider>
   )
 }
 
